@@ -233,10 +233,10 @@ mode "resize" {
 bindsym $mod+$alt+r mode "resize"
 
 # Screenshots
-bindsym $mod+Shift+s exec maim -o -s | exec xclip -selection clipboard -t image/png
+bindsym $mod+Shift+s $runnoid maim -o -s | exec xclip -selection clipboard -t image/png
 bindsym $mod+Print $runnoid maim -o ~/Obrazy/$(date +%s).png
-bindsym $mod+Shift+Print exec maim -o -s ~/Obrazy/$(date +%s).png
-bindsym Print exec maim -o | exec xclip -selection clipboard -t image/png
+bindsym $mod+Shift+Print $runnoid maim -o -s ~/Obrazy/$(date +%s).png
+bindsym Print $runnoid maim -o | exec xclip -selection clipboard -t image/png
 
 # Brightness control
 bindsym XF86MonBrightnessUp $runnoid xbacklight -inc 5 # increase screen brightness
