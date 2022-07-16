@@ -14,4 +14,38 @@ in void-ryzen folder there are configs for my Ryzen system
 ~/.config/picom/custom.conf
 ~/.config/polybar/config.ini
 ~/.local/share/rofi/themes/rounded-blue-dark.rasi
+~/.local/share/rofi/themes/rounded-common.rasi
 ~/.config/rofi/config.rasi
+
+# Dependencies
+
+- i3-gaps
+- polybar
+- rofi
+- maim
+- xclip
+- yakuake
+- zscroll
+- sudo
+- font-material-design-icons-ttf
+- font-awesome
+- font-awesome5
+- material-icons
+- betterlockscreen
+- xss-lock
+- ImageMagick
+- NetworkManager
+- nm-applet
+- alsa-utils
+- pulseaudio-utils
+- zsh
+- oh-my-zsh
+- nody-greeter
+- lightdm
+- lightdm-void-theme
+- discord
+- vivaldi
+- dolphin
+- qt5ct
+- kvantum
+- pipewire (and pipewire-pulse)
