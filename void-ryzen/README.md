@@ -3,6 +3,8 @@ This folder contains dotfiles and scripts for my Ryzen system
 
 # WARNING! THIS IS YET NOT INTENDED FOR USE! I GIVE ABSOLUTELY NO WARRANTY WHATSOEVER
 
+## Also it's so messy right now, I'm working on it to make it more readable
+
 ## Specs
 - AMD Ryzen 5 5600G
 - AMD Wraith Prism Cooler
@@ -24,6 +26,7 @@ This folder contains dotfiles and scripts for my Ryzen system
 - ~/.local/share/rofi/themes/rounded-blue-dark.rasi
 - ~/.local/share/rofi/themes/rounded-common.rasi
 - ~/.config/rofi/config.rasi
+- ~/.screenlayout/xrandr.sh
 
 # Dependencies
 
@@ -37,16 +40,14 @@ This folder contains dotfiles and scripts for my Ryzen system
 - NetworkManager
 - feh
 - lightdm
+- picom
+- urxvt
 
 ### Medium important dependencies
 - maim
 - xclip
 - zscroll
 - sudo
-- font-material-design-icons-ttf
-- font-awesome
-- font-awesome5
-- material-icons
 - xss-lock
 - ImageMagick
 - alsa-utils
@@ -55,6 +56,7 @@ This folder contains dotfiles and scripts for my Ryzen system
 - lightdm-void-theme
 - dolphin
 - pipewire (and pipewire-pulse)
+- zzz
 
 ### Not needed (but cool) dependencies
 - zsh
@@ -63,3 +65,18 @@ This folder contains dotfiles and scripts for my Ryzen system
 - discord
 - vivaldi
 - yakuake
+- vscode (code, or code-oss on some distributions)
+
+## Fonts
+- hack
+- source code pro
+- iosevka
+- font-material-design-icons-ttf
+- font-awesome
+- font-awesome5
+- material-icons
+- open sans
+- termsynu
+- dejavu sans
+- noto sans
+- noto sans symbols(2)
