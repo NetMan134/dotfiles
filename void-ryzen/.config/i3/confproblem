@@ -47,18 +47,14 @@ $runnoid pasystray
 # Yakuake (dropdown terminal)
 $runnoid yakuake
 
-# TEST CYCLE
-$runnoid ~/.config/i3/cycle.sh
-
 # Polybar (bars)
 #$runnoid ~/.config/i3/zmaslo-bot.sh
-#$runnoid ~/.config/i3/polybar.sh
 
 # Composite manager (for transparency and blur effects and to get rid of screen tearing)
 $runnoid picom --config=/home/netman/.config/picom/custom.conf --experimental-backends
 
 # Polkit (GUI sudo authentication agent - in this case the mate one)
-$runnoid /usr/libexec/polkit-mate-authentication-agent-1
+$runnoid polkit-mate-authentication-agent-1
 
 # Udiskie (removable media mounting manager)
 #$runnoid udiskie
@@ -68,7 +64,7 @@ $runnoid /usr/libexec/polkit-mate-authentication-agent-1
 # ========== #
 
 # Set monitor and lock screen background wallpaper (using feh and betterlockscreen)
-#$runnoid ~/.config/i3/set_wallpaper.sh
+$runnoid ~/.config/i3/set_wallpaper.sh
 
 # Set standard Polish (Programmers) keyboard layout (using setxkbmap)
 $runnoid setxkbmap pl
@@ -77,7 +73,7 @@ $runnoid setxkbmap pl
 # Samsung C27F390 1920x1080 27" on the top,
 # Samsung SyncMaster 206BW 1680x1050 20" on the bottom.
 # Generate your own screen layout with GUI app ARandR
-#$runnoid ~/.screenlayout/xrandr.sh
+$runnoid ~/.screenlayout/xrandr.sh
 
 # xss-lock grabs a logind lock inhibit and will use betterlockscreen to lock the screen
 # before suspend. Use loginctl lock-session to lock your screen (used below as $mod+l) 
@@ -293,17 +289,15 @@ bindsym Control+$alt+Delete $runnoid "i3-nagbar -t warning -m 'You pressed the e
 #bindsym XF86AudioLowerVolume $runnoid amixer set Master 5%-
 
 # Use lemonpopup to adjust volume in (Pipewire) PulseAudio (with the awesome macOS-like pop-up!).
-#bindsym XF86AudioRaiseVolume $runnoid ~/git/private/lemonpopup/lemonpopup -p audio -e -i -s 5
-#bindsym XF86AudioLowerVolume $runnoid ~/git/private/lemonpopup/lemonpopup -p audio -e -d -s 5
-bindsym XF86AudioRaiseVolume $runnoid ~/git/private/lemonpopup/lemonpopup -erp audio -i 5
-bindsym XF86AudioLowerVolume $runnoid ~/git/private/lemonpopup/lemonpopup -erp audio -d 5
+bindsym XF86AudioRaiseVolume $runnoid ~/git/private/lemonpopup/lemonpopup -p audio -e -i -s 5
+bindsym XF86AudioLowerVolume $runnoid ~/git/private/lemonpopup/lemonpopup -p audio -e -d -s 5
 
 # Use pactl to mute audio in (Pipewire) PulseAudio.
 #bindsym XF86AudioMute $runnoid pactl set-sink-mute @DEFAULT_SINK@ toggle
 #bindsym XF86AudioMicMute $runnoid pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Use lemonpopup to adjust volume in (Pipewire) PulseAudio (with the awesome macOS-like pop-up!).
-bindsym XF86AudioMute $runnoid ~/git/private/lemonpopup/lemonpopup -erp audio -T
+bindsym XF86AudioMute $runnoid ~/git/private/lemonpopup/lemonpopup -p audio -e -t
 
 # Use playerctl to play, pause, or change tracks/videos using media keys
 bindsym XF86AudioPrev exec playerctl --ignore-player=chrome previous
@@ -344,7 +338,7 @@ gaps bottom 32 # A bottom gap for polybar
 # ============ #
 
 # Lemonpopup standard launch (audio) script without modifying volume level
-bindsym Scroll_Lock $runnoid ~/git/private/lemonpopup/lemonpopup -evrp audio
+bindsym Scroll_Lock $runnoid ~/git/private/lemonpopup/lemonpopup -p audio -e -v --debug
 
 # Lemonbar test script
-bindsym XF86_Calculator $runnoid ~/git/private/lemonpopup/lemonpopup -evrlp audio 
+bindsym XF86_Calculator $runnoid ~/git/private/lemonpopup/test
